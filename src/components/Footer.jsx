@@ -105,7 +105,7 @@ function footer() {
               </li>
               <li>
                 <a className="footer-link" href="#">
-                  Help center
+                  Help center☺
                 </a>
               </li>
               <li>
