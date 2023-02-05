@@ -17,9 +17,7 @@ const App = () => {
   const featRef = useRef(null);
   return (
     <>
-      <XyzTransition appear mode="out-in">
-        <Header ref={featRef} xyz="fade up-100%" />
-      </XyzTransition>
+      <Header ref={featRef} />
       <main>
         <Hero />
         <Featured ref={featRef} />
