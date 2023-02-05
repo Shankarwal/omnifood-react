@@ -1,4 +1,7 @@
+import { useRef } from "react";
+
 import "./App.css";
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -9,13 +12,14 @@ import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
 import Calltoaction from "./components/Calltoaction";
 import GoToButton from "./components/GoToButton";
-import { useRef } from "react";
 
 const App = () => {
   const featRef = useRef(null);
   return (
     <>
-      <Header ref={featRef} />
+      <XyzTransition appear mode="out-in">
+        <Header ref={featRef} xyz="fade up-100%" />
+      </XyzTransition>
       <main>
         <Hero />
         <Featured ref={featRef} />

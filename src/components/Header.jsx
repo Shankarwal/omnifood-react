@@ -26,6 +26,7 @@ const Header = React.forwardRef((props, ref) => {
   }, [handleSticky]);
 
   const classes = `header ${sticky ? "sticky" : null}`;
+
   return (
     <header className={classes}>
       <div className="logo">
